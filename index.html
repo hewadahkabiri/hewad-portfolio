@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hewad Kabiri – Portfolio</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+			
+		<link rel="stylesheet" href="styles.css" />
+
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+
+		<header class="site-header">
+			<div class="container">
+				<h1 class="site-title">Hewad Kabiri</h1>
+				<nav class="site-nav" aria-label="Main navigation">
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main" class="container">
+			<section class="hero">
+				<h2 class="hero-title">
+					CS student exploring AI, Cloud/DevOps & Cybersecurity
+				</h2>
+				<p class="hero-sub">
+					I’m studying computer science at Germanna Community College, exploring
+          			paths in software engineering, AI/ML, Cloud/DevOps, and
+          			cybersecurity. Right now I’m strengthening my CS fundamentals,
+          			preparing for internships, and building hands-on projects from my
+          			coursework and interests.
+				</p>
+				<p><a class="btn" href="#projects">See my projects</a></p>
+			</section>
+
+			<section id="about" class="card">
+				<h3>About Me</h3>
+				<p>
+					Hey! I’m Hewad. I’m currently at
+          			<strong>Germanna Community College</strong>, working on an Associate
+          			of Science on the Computer Science track with plans to transfer to a
+          			four-year CS program. I like combining theory (math, physics, and CS)
+          			with practical, real-world projects.
+				</p>
+				<p>
+					Academically, I’ve worked through calculus, discrete math, and core CS
+          			topics, and I’ve used <strong>Python</strong>,
+          			<strong>Java</strong>, <strong>Octave/MATLAB-style tools</strong>, and
+          			<strong>Arduino</strong> in labs and assignments. I’m also preparing
+          			for some <strong>internships</strong> and I’m comfortable
+          			troubleshooting hardware (for example, tracing PC failures to power
+          			supply issues and helping family and friends fix everyday tech
+          			problems).
+				</p>
+				<p>
+          			Outside of class, I’ve experimented with small side hustles, like 
+					reselling computers via <strong>Facebook Marketplace</strong>, which
+          			taught me a lot about communication, logistics, and documenting what I
+          			do.
+        		</p>
+				<ul class="bullets">
+					<li>
+						Interests: programming, cloud/DevOps, cybersecurity basics, and systems
+					</li>
+					<li>Skills: Python, Java, HTML/CSS/JS</li>
+					<li>Location: United States (EST)</li>
+				</ul>
+			</section>
+
+			<section id="projects" class="card">
+				<h3>Projects</h3>
+				<ul class="projects-list">
+					<li>
+						<strong>Ultrasonic “Tape Measure” (EGR Project)</strong> — Designed
+            			a non-contact distance measurement tool using an Arduino and an
+            			ultrasonic sensor. Calibrated readings against a physical tape
+            			measure and experimented with regression to improve accuracy. Built
+            			housing and presented the final prototype as part of an engineering
+            			design project. Built new skills such as using an Arduino (C/C++), 
+						serial monitor, basic data analysis.
+            			<a class="inline-link" href="#" aria-label="Ultrasonic tape measure write-up">Write-up (coming soon)</a>
+					</li>
+					<li>
+						<strong>Physics & Engineering Lab Scripts</strong> — Created small
+            			programs to support labs such as a police chase kinematics problem,
+            			speed of sound measurements, and circuit/force calculations. These
+            			scripts generate tables, apply formulas, and help check work before
+            			submitting lab reports. 
+						<a class="inline-link" href="#" aria-label="Lab scripts repository">Repo (planned)</a>
+					</li>
+					<li>
+						<strong>CS Practice & Algorithms Repo</strong> — A collection of
+            			small programs from coursework and self-study: recursion practice
+            			(like the Collatz conjecture), search algorithms, basic data
+            			structures, etc.
+            			<a class="inline-link" href="#" aria-label="CS practice repository">Repo (planned)</a>
+					</li>
+					<li>
+						<strong>Facebook Marketplace Seller</strong> — Treated my
+						reselling as a personal business project: tracked items, pricing,
+						profit, and messaging. This experience taught me how to think about
+						process, customer communication, and how software tools (spreadsheets,
+						scripts, or a future app) could make this more efficient.
+          			</li>
+				</ul>
+				<p class="note">
+					I’m actively turning coursework and real-life problems into small
+          			documented projects. As I publish code and demos, I’ll link them here
+          			with clear READMEs, screenshots, and setup steps.
+				</p>
+			</section>
+
+			<section id="contact" class="card">
+				<h3>Contact</h3>
+				<p>
+					Email me at <a href="mailto:hewad.ah.kabiri@gmail.com">hewad.ah.kabiri@gmail.com</a> or
+					find me on <a href="https://www.linkedin.com/in/hewad-kabiri">LinkedIn</a> - 
+					<a href="https://github.com/hewadahkabiri">GitHub</a>
+				</p>
+				<form
+					class="contact-form"
+					name="contact"
+					aria-label="Contact form"
+					onsubmit="event.preventDefault(); alert('Thanks! This form is a placeholder.');"
+				>
+					<label for="name">
+						<span>Name</span>
+						<input
+							id="name"
+							type="text"
+							name="name"
+							placeholder="Your name"
+							required
+						/>
+					</label>
+					<label for="email">
+						<span>Email</span>
+						<input
+							id="email"
+							type="email"
+							name="email"
+							placeholder="you@example.com"
+							required
+						/>
+					</label>
+					<label for="message">
+						<span>Message</span>
+						<textarea
+							id="message"
+							name="message"
+							rows="4"
+							placeholder="Say hello..."
+							required
+						></textarea>
+					</label>
+					<button type="submit" class="btn">Send</button>
+				</form>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>© <span id="year"></span> Hewad Kabiri</p>
+				<p class="socials">
+					Follow: <a href="https://www.linkedin.com/in/hewad-kabiri">LinkedIn</a> - 
+					<a href="https://github.com/hewadahkabiri">GitHub</a>
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
+	</body>
+</html>
