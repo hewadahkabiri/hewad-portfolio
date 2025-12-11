@@ -16,4 +16,4 @@ practice), and my contact information.
 - A little JavaScript for simple behavior
 
 ## Live Site
-https://hewadahkabiri.github.com/hewad-portfolio/
+https://hewadahkabiri.github.io/hewad-portfolio/
